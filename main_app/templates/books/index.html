@@ -24,7 +24,7 @@
 <section class="card-container">
   {% for book in books %}
   <div class="card">
-    {% comment %} <a href="{% url 'book-detail' book.id %}"> {% endcomment %}
+    <a href="{% url 'book-detail' book.id %}">
     <div class="card-content">
       <div class="card-img-container">
         <img
@@ -33,7 +33,7 @@
         />
       </div>
       <h2 class="card-title">{{ book.title }}</h2>
-      <h2 class="card-title">{{ book.author }}</h2>
+      <h3 class="card-title">{{ book.author }}</h3>
     </div>
     </a>
   </div>

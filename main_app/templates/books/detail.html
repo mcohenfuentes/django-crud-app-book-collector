@@ -1,0 +1,19 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/books/book-detail.css' %}" />
+{% endblock %} 
+{% block content %}
+<section class="cat-container">
+  <div class="cat-img">
+    <img src="{% static 'images/books.svg' %}" alt="books" />
+  </div>
+  <div class="mountain-details">
+    <h2 class="card-title">{{ book.title }}</h2>
+      <h2 class="card-title">{{ book.author }}</h2>
+      <h2 class="card-title">{{ book.genre }}</h2>
+      <h2 class="card-title">{{ book.description }}</h2>
+    </div>
+</section>
+
+{% endblock %}
