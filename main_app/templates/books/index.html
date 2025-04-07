@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link
+  rel="stylesheet"
+  href="{% static 'css/books/book-index.css' %}"
+/>
+{% endblock %} {% block content %}
+
+<section class="page-header">
+  <h1>Book List</h1>
+  <img
+    src="{% static 'images/books.svg' %}"
+    alt="A stack of books"
+  />
+  <img
+    src=""
+    alt=""
+  />
+  <img
+    src=""
+    alt=""
+  />
+</section>
+
+<section class="card-container">
+  {% for book in books %}
+  <div class="card">
+    {% comment %} <a href="{% url 'book-detail' book.id %}"> {% endcomment %}
+    <div class="card-content">
+      <div class="card-img-container">
+        <img
+          src="{% static 'images/books.svg' %}"
+          alt=""
+        />
+      </div>
+      <h2 class="card-title">{{ book.title }}</h2>
+      <h2 class="card-title">{{ book.author }}</h2>
+    </div>
+    </a>
+  </div>
+  {% endfor %}
+</section>
+
+{% endblock %}
