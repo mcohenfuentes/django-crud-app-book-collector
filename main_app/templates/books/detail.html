@@ -13,6 +13,10 @@
       <h2 class="card-title">{{ book.author }}</h2>
       <h2 class="card-title">{{ book.genre }}</h2>
       <h2 class="card-title">{{ book.description }}</h2>
+      <div class="book-actions">
+        <a href="{% url 'book-update' book.id %}" class="btn warn">Edit</a>
+        <a href="{% url 'book-delete' book.id %}" class="btn danger">Delete</a>
+      </div>
     </div>
 </section>
 
