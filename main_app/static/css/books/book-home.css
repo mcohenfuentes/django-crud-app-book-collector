@@ -15,15 +15,12 @@ main {
     flex-direction: column;
   }
   
-  .header-logo-container {
-    display: none;
-  }
   
   .logo-container {
     max-width: 375px;
   }
   
-  .cat-container {
+  .book-container {
     width: 80%;
   }
   
