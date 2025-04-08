@@ -6,7 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Book
-
+from .forms import ReadingForm
 
 
 
@@ -24,7 +24,9 @@ def about(request):
 @login_required
 def book_detail(request, book_id):
     book = Book.objects.get(id=book_id)
-    return render(request, 'books/detail.html', {'book': book})
+    reading_form = ReadingForm()
+    return render(request, 'books/detail.html', {
+        'book': book, 'reading_form': reading_form})
 
 
 class BookCreate(LoginRequiredMixin, CreateView):
@@ -42,6 +44,15 @@ class BookUpdate(LoginRequiredMixin, UpdateView):
 class BookDelete(LoginRequiredMixin, DeleteView):
     model = Book
     success_url = '/books/'
+
+@login_required
+def add_reading(request, book_id):
+    form = ReadingForm(request.POST)
+    if form.is_valid():
+        new_reading = form.save(commit=False)
+        new_reading.book_id = book_id
+        new_reading.save()
+    return redirect('book-detail', book_id=book_id)
 
 def signup(request):
     error_message = ''

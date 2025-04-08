@@ -19,5 +19,47 @@
       </div>
     </div>
 </section>
+<div class="readings-container">
+  <section class="readings">
+    <div class="subsection-title">
+      <h2>Readings</h2>
+      <img
+        src="{% static 'images/book1.svg' %}"
+        alt="A book"
+      />
+    </div>
+    <h3>Add a Reading</h3>
+
+<form action="{% url 'add-reading' book.id %}" method="post" class="subsection-content" autocomplete="off">
+  {% csrf_token %} 
+  {{ reading_form.as_p }}
+  <button type="submit" class="btn submit">Add To Reading Log</button>
+</form>
+<h3>Past Readings</h3>
+{% if book.reading_set.all.count %}
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for readings in book.reading_set.all %}
+      <tr>
+        <td>{{reading.date}}</td>
+        <td>{{reading.get_status_display}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <div class="subsection-content">
+    <p>⚠️ no books have been read!</p>
+  </div>
+{% endif %}
+    </section>
+  </div>
+
 
 {% endblock %}
