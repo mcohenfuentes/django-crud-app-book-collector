@@ -1,40 +1,67 @@
 .form-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  table {
-    padding: 0 40px;
-    width: 100%;
-    border-spacing: 0 20px;
-  }
-  
-  th {
-    text-align: left;
-    padding: 6px 20px 0 0;
-    font-weight: normal;
-    vertical-align: top;
-    font-size: var(--font-reg);
-  }
-  
-  td {
-    max-width: 60%;
-  }
-  
-  td > * {
-    width: 100%;
-    padding: 2px 4px;
-    font-size: var(--font-l);
-  }
-  
-  td > textarea {
-    height: calc(4 * var(--font-l) + 8px);
-    font-family: inherit;
-  }
-  
-  .btn {
-    align-self: flex-end;
-    margin-right: 40px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+table {
+  width: 100%;
+  max-width: 600px;
+  border-spacing: 0 1.5rem;
+}
+
+th {
+  text-align: left;
+  padding: 0.5rem 1rem 0 0;
+  font-weight: 600;
+  font-size: var(--font-reg);
+  color: #444;
+  vertical-align: top;
+}
+
+td {
+  width: 100%;
+}
+
+td > input,
+td > textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: var(--font-reg);
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+td > input:focus,
+td > textarea:focus {
+  border-color: var(--nav-bg);
+  outline: none;
+}
+
+td > textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+button.btn.submit {
+  margin: 2rem auto 0;
+  background-color: var(--button-bg);
+  border: 2px solid var(--link-hover-color);
+  color: var(--link-hover-color);
+  padding: 0.8rem 1.6rem;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: var(--font-l);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+button.btn.submit:hover {
+  background-color: var(--link-hover-color);
+  color: white;
+}

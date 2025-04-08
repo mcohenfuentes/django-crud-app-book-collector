@@ -1,10 +1,13 @@
-{% extends 'base.html' %} {% load static %} {% block head %}
-<link
-  rel="stylesheet" href="{% static 'css/books/book-home.css' %}"
-/>
-{% endblock %} {% block content %}
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/books/book-home.css' %}" />
+{% endblock %}
+{% block content %}
 
 <section class="logo-container">
+  <h1 class="home-title">Welcome to Your Book Collection</h1>
+  <p class="home-subtitle">Track, reflect on, and celebrate your reading journey</p>
   <div class="book-container">
     <img
       src="{% static 'images/books2.svg' %}"
@@ -12,6 +15,7 @@
     />
   </div>
 </section>
+
 {% if not user.is_authenticated %}
 <section>
   <form action="{% url 'home' %}" method="post" class="login">
