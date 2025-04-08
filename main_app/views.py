@@ -29,7 +29,7 @@ def book_detail(request, book_id):
 
 class BookCreate(LoginRequiredMixin, CreateView):
     model = Book
-    fields = '__all__'
+    fields = ['title', 'author', 'genre', 'description']
 
     def form_valid(self, form):
         form.instance.user = self.request.user  
