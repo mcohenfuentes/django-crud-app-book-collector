@@ -37,7 +37,7 @@
     --submit: rgb(160, 8, 171);
     --warn: rgb(255, 102, 0);
     --danger: rgb(220, 20, 30);
-    --secondary: rgb(57, 57, 57);
+    --secondary: green;
     --card-box-shadow: 5px 5px 6px -1px #aaa;
     --font-xtreme: 4.2rem;
     --font-xxl: 3.6rem;
@@ -129,6 +129,7 @@
     border-color: var(--submit);
   }
   
+
   .secondary {
     color: var(--secondary);
     border-color: var(--secondary);
@@ -316,3 +317,66 @@
     color: var(--text-color);
   }
   
+  .delete-container {
+    background: #fffdf3;
+    border: 2px solid var(--nav-bg);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+    max-width: 520px;
+    padding: 2.5rem;
+    margin: 4rem auto;
+    text-align: center;
+  }
+  
+  .delete-container h2 {
+    font-size: var(--font-l);
+    margin-bottom: 2rem;
+  }
+  
+  .delete-container .form {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .delete-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;       /* adds space below the nav bar */
+    margin-bottom: 0.5rem;  /* bring it in tighter */
+  }
+
+  .confirmation-box {
+    background: #fffdf3;
+    border: 2px solid var(--nav-bg);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+    max-width: 520px;
+    padding: 1.2rem 3rem; 
+    margin: 1rem auto; /* slight spacing from heading */
+    font-size: var(--font-xxl);
+    text-align: center;
+  }
+  
+  .confirmation-box h2 {
+    font-size: var(--font-xl);
+    margin-bottom: 2rem;
+  }
+  
+  .confirmation-box .form {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .delete-header h1 {
+    font-size: var(--font-xxl);
+    margin: 0;
+  }
+  
+  .delete-header img {
+    height: 42px;
+    margin-top: 0;
+  }

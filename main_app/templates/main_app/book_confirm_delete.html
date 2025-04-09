@@ -2,17 +2,18 @@
 {% load static %} 
 {% block content %}
 
-<div class="page-header">
+<div class="delete-header">
   <h1>Delete Book?</h1>
-  <img src="{% static 'images/books.svg' %}" alt="books" />
+  <img src="{% static 'images/book3.svg' %}" alt="green book" />
 </div>
 
-<h2>Are you sure you want to delete {{ book.title }}?</h2>
+<div class="confirmation-box">
+<h2>Are you sure you want to delete<br>{{ book.title }}?<br></h2>
 
 <form action="" method="post" class="form">
   {% csrf_token %}
   <a href="{% url 'book-detail' book.id %}" class="btn secondary">Cancel</a>
   <button type="submit" class="btn danger">Yes - Delete!</button>
 </form>
-
+</div>
 {% endblock %}

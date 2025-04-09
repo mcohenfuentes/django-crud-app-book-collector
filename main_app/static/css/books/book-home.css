@@ -32,9 +32,9 @@ main > section {
 }
 
 .home-subtitle {
-  font-size: var(--font-l);
+  font-size: var(--font-xl);
   margin-bottom: 2rem;
-  color: #444;
+  color: black;
 }
 
 .book-container {

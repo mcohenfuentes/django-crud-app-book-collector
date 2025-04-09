@@ -9,18 +9,18 @@
     <img src="{% static 'images/book2.svg' %}" alt="books" />
   </div>
   <div class="book-details">
-    <h2 class="card-title">{{ book.title }}</h2>
-      <h2 class="card-title">{{ book.author }}</h2>
-      <h2 class="card-title">{{ book.genre }}</h2>
-      <h2 class="card-title">{{ book.description }}</h2>
+    <h2 class="card-title">Title: {{ book.title }}</h2>
+      <h2 class="card-title">Author: {{ book.author }}</h2>
+      <h2 class="card-title">Genre: {{ book.genre }}</h2>
+      <h2 class="card-title">Description/Notes: {{ book.description }}</h2>
       <div class="book-actions">
         <a href="{% url 'book-update' book.id %}" class="btn warn">Edit</a>
         <a href="{% url 'book-delete' book.id %}" class="btn danger">Delete</a>
       </div>
     </div>
 </section>
-<div class="readings-container">
-  <section class="readings">
+<section class="readings-container">
+  <div class="readings">
     <div class="subsection-title">
       <h2>Readings</h2>
       <img
@@ -45,7 +45,7 @@
       </tr>
     </thead>
     <tbody>
-      {% for readings in book.reading_set.all %}
+      {% for reading in book.reading_set.all %}
       <tr>
         <td>{{reading.date}}</td>
         <td>{{reading.get_status_display}}</td>
@@ -55,7 +55,7 @@
   </table>
 {% else %}
   <div class="subsection-content">
-    <p>⚠️ no books have been read!</p>
+    <p>⚠️ {{book.title}} has not been read!</p>
   </div>
 {% endif %}
     </section>
