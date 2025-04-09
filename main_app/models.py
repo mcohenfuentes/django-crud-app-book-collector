@@ -30,6 +30,7 @@ class Reading(models.Model):
         choices=STATUSES,
         default=STATUSES[0][0]
     )
+    notes = models.TextField(max_length=250)
 
     book = models.ForeignKey('Book', on_delete=models.CASCADE)
 
