@@ -380,3 +380,15 @@
     height: 42px;
     margin-top: 0;
   }
+
+  .about-img {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-img img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }

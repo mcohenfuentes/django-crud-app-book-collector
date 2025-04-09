@@ -150,3 +150,45 @@
 .readings tr:nth-child(even) {
   background-color: #f3f3fd;
 }
+
+/* Improve alignment of form fields */
+.subsection-content label {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  display: block;
+  font-size: var(--font-reg);
+}
+
+.subsection-content input,
+.subsection-content select,
+.subsection-content textarea {
+  font-family: inherit;
+  font-size: var(--font-reg);
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.subsection-content textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button spacing */
+.subsection-content .btn {
+  align-self: center;
+  margin-top: 1rem;
+}
+
+/* Table tweaks */
+.readings table {
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+.readings td:nth-child(3) {
+  max-width: 200px;
+  white-space: pre-wrap;
+}

@@ -12,7 +12,7 @@
     <h2 class="card-title">Title: {{ book.title }}</h2>
       <h2 class="card-title">Author: {{ book.author }}</h2>
       <h2 class="card-title">Genre: {{ book.genre }}</h2>
-      <h2 class="card-title">Description/Notes: {{ book.description }}</h2>
+      <h2 class="card-title">Description: {{ book.description }}</h2>
       <div class="book-actions">
         <a href="{% url 'book-update' book.id %}" class="btn warn">Edit</a>
         <a href="{% url 'book-delete' book.id %}" class="btn danger">Delete</a>
@@ -24,11 +24,11 @@
     <div class="subsection-title">
       <h2>Readings</h2>
       <img
-        src="{% static 'book1.svg' %}"
+        src="{% static 'book3.svg' %}"
         alt="A book"
       />
     </div>
-    <h3>Add a Reading</h3>
+    {% comment %} <h3>Add a Reading</h3> {% endcomment %}
 
 <form action="{% url 'add-reading' book.id %}" method="post" class="subsection-content" autocomplete="off">
   {% csrf_token %} 

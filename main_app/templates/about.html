@@ -1,9 +1,15 @@
 {% extends 'base.html' %} 
+{% load static %}
 {% block content %}
 <div class="about-container">
 <h1>About Book Collection</h1>
 <hr />
 <p class="page-content">
-  Book Collection is a simple way to keep track of the books you’ve read—or want to read! Whether you're logging your latest literary obsession, reflecting on a past favorite, or organizing your growing shelf, this app helps you celebrate your reading journey. Add books, track reading status, and revisit your favorites all in one cozy corner of the web. Happy reading!
+  Book Collection is a simple way to keep track of the books you’ve read or want to read. Whether you're logging your latest literary obsession, reflecting on a past favorite, or organizing your growing shelf, this app helps you celebrate your reading journey. Add books, track reading status, and revisit your favorites all in one cozy corner of the web. Happy reading!
 </p>
+<div class="about-img">
+  <img src="{% static 'books2.svg' %}" alt="Stack of books" />
+</div>
+</div>
+
 {% endblock %}
