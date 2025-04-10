@@ -4,10 +4,10 @@
 <link rel="stylesheet" href="{% static 'css/form.css' %}" />
 {% endblock %} 
 {% block content %}
-<div class="page-header">
+<div class="auth-form">
   <h1>Sign Up</h1>
-  <img src="{% static 'books.svg' %}" alt="stack of books" />
-</div>
+  {% comment %} <img src="{% static 'books.svg' %}" alt="stack of books" /> {% endcomment %}
+
 {% if error_message %}
   <p class="red-text">{{ error_message }}</p>
 {% endif %}
@@ -18,5 +18,5 @@
   </table>
   <button type="submit" class="btn submit">Submit!</button>
 </form>
-
+</div>
 {% endblock %}

@@ -48,7 +48,7 @@
   }
   
   header {
-    width: 100%;
+    width: 100vw;
     background: var(--nav-bg-ff); 
     border-bottom: var(--borders);
   }
