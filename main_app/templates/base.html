@@ -21,7 +21,8 @@
       <nav>
         <ul>
             {% if user.is_authenticated %}
-            <li><a href="{% url 'book-index' %}">All Books</a></li>
+            <li><a href="{% url 'book-index' %}">My Books</a></li>
+            <li><a href="{% url 'all-books' %}">All Books</a></li>
             <li><a href="{% url 'book-create' %}">Add a Book</a></li>
           <li><a href="{% url 'about' %}">About</a></li>
           <li>

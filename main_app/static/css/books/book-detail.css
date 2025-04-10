@@ -52,7 +52,7 @@
 .book-details h2:nth-of-type(3),
 .book-details h2:nth-of-type(4) {
   font-size: var(--font-reg);
-  color: #555;
+  color: black;
   font-weight: bold;
   line-height: 1.6;
 }

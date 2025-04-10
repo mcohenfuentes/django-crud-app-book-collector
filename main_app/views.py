@@ -15,6 +15,11 @@ def book_index(request):
     books = Book.objects.filter(user=request.user)
     return render(request, 'books/index.html', {'books': books})
 
+@login_required
+def all_books(request):
+    books = Book.objects.all()
+    return render(request, 'books/all_books.html', {'books': books})
+
 class Home(LoginView):
     template_name = 'home.html'
 
