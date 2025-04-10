@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
-  padding: 2rem;
+  /* margin-top: 2rem; */
+  /* padding: 2rem; */
 }
 
 table {
@@ -80,7 +80,7 @@ button.btn.submit:hover {
 .auth-form h1 {
   font-size: var(--font-xxl);
   text-align: center;
-  margin-bottom: 2.5rem;  /* smaller gap under the heading */
+  margin-bottom: 2.5rem;  smaller gap under the heading
 }
 
 .auth-form label {
@@ -153,10 +153,14 @@ button.btn.submit:hover {
 
 .page-header h1 {
   font-size: var(--font-xxl);
-  margin: 0 0 0 30px; /* adjust the 50px as needed */
+  margin: 0 0 0 30px; 
   text-align: left;
 }
 
 .page-header img {
   height: 40px;
+}
+
+.sign-up {
+  margin: 0 !important;
 }
