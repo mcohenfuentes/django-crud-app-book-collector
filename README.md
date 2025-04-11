@@ -1,4 +1,4 @@
-![Book Collection Screenshot](static/book-collection.png)
+![Book Collection Screenshot](../django-crud-app-book-collector/main_app/static/book-collection.png)
 
 Book Collection is a cozy web app built to help readers track their reading journeys. Whether you're logging a new read, jotting down reflections, or browsing books shared by others, this app keeps everything in one bookish place.
 
