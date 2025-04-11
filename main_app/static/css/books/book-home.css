@@ -15,7 +15,7 @@ main > section {
   flex-direction: column;
 }
 
-/* 🪄 Home Page: Welcome Message & Layout */
+
 .logo-container {
   display: flex;
   flex-direction: column;

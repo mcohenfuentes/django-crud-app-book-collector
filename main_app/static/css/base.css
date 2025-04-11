@@ -1,17 +1,11 @@
-
   
-  The Universal Selector
-  *, /* All elements*/
-  *::before, /* All ::before pseudo-elements */
+  *, 
+  *::before, 
   *::after {
-    /* All ::after pseudo-elements */
-    /* height & width will now include border & padding by default
-       but can be over-ridden as needed */
+   
     box-sizing: inherit;
   }
   
-  /* resets font size to be 62.5% of the user preference - 
-       in most browser configurations this will be 10px */
   :root {
     font-size: 62.5%;
 
@@ -27,7 +21,7 @@
       'Helvetica Neue', sans-serif;
     min-height: 100vh;
     background-color: #fffacd;
-    --nav-bg: #ffd599;     /* soft orange for translucent nav (blur effect) */
+    --nav-bg: #ffd599;     
     --nav-bg-ff: #ffb347; 
     --borders: rgb(114, 36, 248) solid 2px;
     --text-color: rgb(17, 20, 17);
@@ -183,7 +177,7 @@
       padding: 0 15px;
     }
   
-    /* visual fix to help align logo */
+   
     .header-logo-container {
       padding-top: 3px;
     }
@@ -251,7 +245,7 @@
     }
   
     .header-logo-container {
-      /* visual fix to help align logo */
+     
       padding-top: 6px;
       width: 256px;
       height: 35px;
@@ -344,8 +338,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;       /* adds space below the nav bar */
-    margin-bottom: 0.5rem;  /* bring it in tighter */
+    margin-top: 5rem;       
+    margin-bottom: 0.5rem;  
   }
 
   .confirmation-box {
@@ -355,7 +349,7 @@
     box-shadow: var(--card-box-shadow);
     max-width: 520px;
     padding: 1.2rem 3rem; 
-    margin: 1rem auto; /* slight spacing from heading */
+    margin: 1rem auto; 
     font-size: var(--font-xxl);
     text-align: center;
   }

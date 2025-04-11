@@ -19,6 +19,7 @@ I wanted something that felt both functional and personal—like a digital books
 - **Django**  
 - **HTML + CSS**  
 - **Django Authentication**  
+- **PostgreSQL**  
 - **Deployed on Heroku**
 
 ---
@@ -27,6 +28,7 @@ I wanted something that felt both functional and personal—like a digital books
 
 - ChatGPT: [ChatGPT](https://chatgpt.com/)  
 - WCAG testing: [WCAG testing](https://webaim.org/resources/contrastchecker/) 
+- Canva: [Canva](https://canva.com/)  
 
 ---
 
@@ -34,7 +36,7 @@ I wanted something that felt both functional and personal—like a digital books
 
 - ✅ Search or filter books by title, author, or genre  
 - 📷 Allow users to upload custom book cover images  
-- ✨ Add a favorites feature or rating system  
+- ✨ Add a favorites feature/rating system  
 - 📊 Dashboard view with reading stats  
 - 🗂️ Tagging system for better book organization
 - 🤝 Community component where users can comment on each others books/notes
