@@ -37,7 +37,6 @@ I wanted something that felt both functional and personal—like a digital books
 - ✅ Search or filter books by title, author, or genre  
 - 📷 Allow users to upload custom book cover images  
 - ✨ Add a favorites feature/rating system  
-- 📊 Dashboard view with reading stats  
 - 🗂️ Tagging system for better book organization
 - 🤝 Community component where users can comment on each others books/notes
 
