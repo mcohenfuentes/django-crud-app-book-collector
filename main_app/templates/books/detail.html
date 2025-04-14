@@ -6,7 +6,7 @@
 {% block content %}
 <section class="book-container">
   <div class="book-img">
-    <img src="{% static 'book2.svg' %}" alt="books" />
+    <img src="{% static 'book2.svg' %}" alt="opened up yellow book" />
   </div>
   <div class="book-details">
     <h2 class="card-title">Title: {{ book.title }}</h2>
@@ -27,7 +27,7 @@
       <h2>Readings</h2>
       <img
         src="{% static 'book3.svg' %}"
-        alt="A book"
+        alt="A closed green book"
       />
     </div>
     {% if book.user == request.user %}
