@@ -29,7 +29,7 @@
     --button-bg: rgb(245, 245, 245);
     --button-bg-hover: rgb(226, 226, 226);
     --submit: rgb(160, 8, 171);
-    --warn: rgb(255, 102, 0);
+    --warn: green;
     --danger: rgb(220, 20, 30);
     --secondary: green;
     --card-box-shadow: 5px 5px 6px -1px #aaa;

@@ -191,3 +191,8 @@
   max-width: 200px;
   white-space: pre-wrap;
 }
+
+.btn-edit {
+  color: green;
+
+}
