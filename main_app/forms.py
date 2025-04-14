@@ -1,4 +1,5 @@
 from django import forms
+from datetime import date
 from .models import Reading
 
 class ReadingForm(forms.ModelForm):
@@ -9,8 +10,8 @@ class ReadingForm(forms.ModelForm):
             'date': forms.DateInput(
                 format=('%Y-%m-%d'),
                 attrs={
-                    'placeholder': 'Select a date',
-                    'type': 'date'
+                    'type': 'date',
+                    'max': date.today().isoformat()
                 }
             ),
         }
